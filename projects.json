@@ -1,0 +1,126 @@
+[
+    {
+        "id": 1,
+        "title": "GitAI",
+        "description": "A lightweight AI based commit message generator for git @University of Basel",
+        "technologies": ["Python", "Hugging Face API", "Click CLI"],
+        "image": "assets/images/projects/GitAI.jpg",
+        "category": "software",
+        "status": "COMPLETED",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/Noah-Klaholz/GitAI",
+                "label": "VIEW_CODE"
+            }
+        ],
+        "featured": true
+    },
+    {
+        "id": 2,
+        "title": "Settlers of Asgard",
+        "description": "Online multiplayer strategy game inspired by Nordic mythology, developed with three fellow students.",
+        "technologies": ["Java", "Git", "Gradle", "Game Design"],
+        "image": "assets/images/projects/game-logo.png",
+        "category": "game",
+        "status": "COMPLETED",
+        "links": [
+            {
+                "type": "website",
+                "url": "https://settlersofasgard.netlify.app",
+                "label": "VISIT_SITE"
+            },
+            {
+                "type": "github",
+                "url": "https://github.com/Noah-Klaholz/SettlersOfAsgard",
+                "label": "VIEW_CODE"
+            }
+        ],
+        "featured": true
+    },
+    {
+        "id": 3,
+        "title": "Mini Game Engine",
+        "description": "Custom game engine for nonlinear click-and-point story games with achievement system.",
+        "technologies": ["Java", "GitHub", "Maven", "JetBrains"],
+        "image": "assets/images/projects/TheGreatDateDilemma.jpg",
+        "category": "game",
+        "status": "COMPLETED",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/Noah-Klaholz/The-Great-Date-Dilemma",
+                "label": "VIEW_CODE"
+            }
+        ],
+        "featured": true
+    },
+    {
+        "id": 4,
+        "title": "Hebel's Kitchen",
+        "description": "Led student-run business generating €1,000+ in profit, donated to local charities.",
+        "technologies": ["Leadership", "Entrepreneurship", "Management"],
+        "image": "assets/images/projects/HebelsKitchen.jpeg",
+        "category": "leadership",
+        "status": "COMPLETED",
+        "links": [
+            {
+                "type": "instagram",
+                "url": "https://www.instagram.com/hebelskitchen/?igsh=YXU0enVmaWdwaXFx",
+                "label": "INSTAGRAM"
+            }
+        ],
+        "featured": false
+    },
+    {
+        "id": 5,
+        "title": "Space Invaders + SQL",
+        "description": "Space Invaders inspired game with SQL-powered leaderboard system.",
+        "technologies": ["Java", "SQL", "Game Design"],
+        "image": "assets/images/projects/SpaceInvaders.png",
+        "category": "game",
+        "status": "COMPLETED",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/Noah-Klaholz/SpaceInvadersCode",
+                "label": "VIEW_CODE"
+            }
+        ],
+        "featured": false
+    },
+    {
+        "id": 6,
+        "title": "RainyDayFund",
+        "description": "EVM-based smart contract with React app for blockchain challenge @University of Basel.",
+        "technologies": ["Solidity", "React", "Hardhat", "TypeScript"],
+        "image": "assets/images/projects/RainyDayFund.png",
+        "category": "blockchain",
+        "status": "COMPLETED",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/vincentschall/decentralized_weather_insurance",
+                "label": "VIEW_CODE"
+            }
+        ],
+        "featured": true
+    },
+    {
+        "id": 7,
+        "title": "Inheritance Protocol",
+        "description": "Decentralized inheritance protocol with web-app @University of Basel.",
+        "technologies": ["Solidity", "Next.js", "Hardhat", "TypeScript"],
+        "image": "assets/images/projects/DecentralizedInheritanceProtocol.png",
+        "category": "blockchain",
+        "status": "COMPLETED",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/vincentschall/decentralized_inheritance_protocol",
+                "label": "VIEW_CODE"
+            }
+        ],
+        "featured": true
+    }
+]
