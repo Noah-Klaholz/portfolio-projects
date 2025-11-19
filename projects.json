@@ -123,4 +123,21 @@
         ],
         "featured": true
     }
+    {
+        "id": 8,
+        "title": "Gamified Portfolio",
+        "description": "A Cyberpunk style portfolio website developed using AI tools to test how advanced web development is with AI",
+        "technologies": ["ClaudeAI", "HTML", "JavaScript", "CSS"],
+        "image": "assets/images/projects/CyberpunkPortfolio.png",
+        "category": "website",
+        "status": "COMPLETED",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/Noah-Klaholz/GamifiedPortfolio",
+                "label": "VIEW_CODE"
+            }
+        ],
+        "featured": true
+    }
 ]
