@@ -40,12 +40,12 @@
     },
     {
         "id": 3,
-        "title": "Mini Game Engine",
-        "description": "Custom game engine for nonlinear click-and-point story games with achievement system.",
-        "technologies": ["Java", "GitHub", "Maven", "JetBrains"],
-        "image": "assets/images/projects/TheGreatDateDilemma.jpg",
+        "title": "The Gung",
+        "description": "Local browser game version of popular card game The Gang",
+        "technologies": ["TypeScript", "GitHub", "React", "Tailwind-CSS"],
+        "image": "/assets/images/projects/TheGung.png",
         "category": "game",
-        "status": "COMPLETED",
+        "status": "",
         "links": [
             {
                 "type": "github",
@@ -135,6 +135,23 @@
             {
                 "type": "github",
                 "url": "https://github.com/Noah-Klaholz/GamifiedPortfolio",
+                "label": "VIEW_CODE"
+            }
+        ],
+        "featured": true
+    },
+    {
+        "id": 9,
+        "title": "Mini Game Engine",
+        "description": "Custom game engine for nonlinear click-and-point story games with achievement system.",
+        "technologies": ["Java", "GitHub", "Maven", "JetBrains"],
+        "image": "assets/images/projects/TheGreatDateDilemma.jpg",
+        "category": "game",
+        "status": "COMPLETED",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/Noah-Klaholz/The-Great-Date-Dilemma",
                 "label": "VIEW_CODE"
             }
         ],
