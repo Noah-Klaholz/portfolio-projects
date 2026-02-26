@@ -45,7 +45,7 @@
         "technologies": ["TypeScript", "GitHub", "React", "Tailwind-CSS"],
         "image": "/assets/images/projects/TheGung.png",
         "category": "game",
-        "status": "",
+        "status": "UNDER CONSTRUCTION",
         "links": [
             {
                 "type": "github",
