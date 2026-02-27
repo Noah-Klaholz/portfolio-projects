@@ -48,6 +48,11 @@
         "status": "UNDER CONSTRUCTION",
         "links": [
             {
+                "type": "website",
+                "url": "https://the-gung.vercel.app/",
+                "label": "VISIT_SITE"
+            },
+            {
                 "type": "github",
                 "url": "https://github.com/Noah-Klaholz/The-Great-Date-Dilemma",
                 "label": "VIEW_CODE"
@@ -132,6 +137,11 @@
         "category": "website",
         "status": "COMPLETED",
         "links": [
+            {
+                "type": "website",
+                "url": "https://noahklaholz-dev.netlify.app/",
+                "label": "VISIT_SITE"
+            },
             {
                 "type": "github",
                 "url": "https://github.com/Noah-Klaholz/GamifiedPortfolio",
