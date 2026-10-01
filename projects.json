@@ -1,8 +1,76 @@
 [
     {
+        "id": 10,
+        "slug": "spidey-irl",
+        "title": "SpideyIRL",
+        "tagline": "A real-life Spidey Sense you wear on your head.",
+        "description": "Wearable headband that turns nearby obstacles into directional vibrations, with a voice assistant that tells you what the camera sees.",
+        "date": "2026-09",
+        "context": "Hack the North 2026",
+        "technologies": ["C", "QNX Neutrino RTOS", "Python", "Raspberry Pi", "YOLO", "OpenCV", "Vosk", "Piper TTS", "Qwen 3.5 Omni Flash"],
+        "image": "assets/images/projects/SpideyIRL.svg",
+        "imageAlt": "SpideyIRL banner: a real-life Spidey Sense, built at Hack the North 2026",
+        "category": "hardware",
+        "status": "COMPLETED",
+        "role": "My part: speech recognition (Vosk) and text-to-speech (Piper); also worked on the hardware, debugging, the pitch and the Devpost submission",
+        "awards": [
+            {
+                "title": "3rd Place",
+                "detail": "QNX: Create an Embedded System with QNX that Uses AI"
+            }
+        ],
+        "highlights": [
+            "8 ultrasonic sensors mapped to 8 vibration motors, 45° apart",
+            "Reflex path runs fully offline on QNX, independent of the AI",
+            "Offline voice interface with Vosk + Piper",
+            "224 passing offline tests by the end of the hackathon"
+        ],
+        "story": [
+            {
+                "heading": "The idea",
+                "body": "Can we give someone a sense they did not have before? Peter Parker's Spidey Sense tells him where danger is before he sees it. We built a headband that does the same: something on your left, your left temple buzzes. The closer it gets, the faster the pulses."
+            },
+            {
+                "heading": "How it works",
+                "body": "Two independent paths, because reflexes should never have to wait for intelligence. A Raspberry Pi running QNX reads eight distance sensors, validates the measurements and drives the vibration motors locally. A second Pi on Linux runs a YOLO object tracker on the camera feed and an offline voice pipeline. Ask \"what's in front of me?\" and the camera frame, the detected objects and your question go to Qwen 3.5 Omni Flash, and the answer is spoken back to you."
+            },
+            {
+                "heading": "What we learned",
+                "body": "Building a new sense is an interaction problem, not an information problem. Touch tells you where something is, voice tells you what it is, and neither should overwhelm the wearer. We also designed for failure from the start: missing sensor readings stay unknown instead of reading as empty space, stale camera frames are rejected, and AI requests have hard deadlines."
+            }
+        ],
+        "team": [
+            { "name": "Aditya Padmarajan", "url": "https://github.com/adi-padmarajan" },
+            { "name": "Halie Favron", "url": "https://github.com/halieanastasia" },
+            { "name": "Chris Dietrich", "url": "https://github.com/ChrisD790" }
+        ],
+        "gallery": [
+            {
+                "src": "assets/images/projects/SpideyIRL-architecture.jpg",
+                "alt": "SpideyIRL system architecture: a reflex lane on QNX and an understanding lane with camera, microphone and Qwen 3.5 Omni Flash",
+                "caption": "System architecture: the reflex lane never depends on the AI lane."
+            }
+        ],
+        "links": [
+            {
+                "type": "devpost",
+                "url": "https://devpost.com/software/sixth-sense-pk24ul",
+                "label": "DEVPOST"
+            },
+            {
+                "type": "github",
+                "url": "https://github.com/adi-padmarajan/SpideyIRL",
+                "label": "VIEW_CODE"
+            }
+        ],
+        "featured": true
+    },
+    {
         "id": 1,
+        "slug": "gitai",
         "title": "GitAI",
         "description": "A lightweight AI based commit message generator for git @University of Basel",
+        "context": "University of Basel",
         "technologies": ["Python", "Hugging Face API", "Click CLI"],
         "image": "assets/images/projects/GitAI.jpg",
         "category": "software",
@@ -18,6 +86,7 @@
     },
     {
         "id": 2,
+        "slug": "settlers-of-asgard",
         "title": "Settlers of Asgard",
         "description": "Online multiplayer strategy game inspired by Nordic mythology, developed with three fellow students.",
         "technologies": ["Java", "Git", "Gradle", "Game Design"],
@@ -40,10 +109,11 @@
     },
     {
         "id": 3,
+        "slug": "the-gung",
         "title": "The Gung",
         "description": "Local browser game version of popular card game The Gang",
         "technologies": ["TypeScript", "GitHub", "React", "Tailwind-CSS"],
-        "image": "/assets/images/projects/TheGung.png",
+        "image": "assets/images/projects/TheGung.png",
         "category": "game",
         "status": "UNDER CONSTRUCTION",
         "links": [
@@ -54,50 +124,18 @@
             },
             {
                 "type": "github",
-                "url": "https://github.com/Noah-Klaholz/The-Great-Date-Dilemma",
+                "url": "https://github.com/Noah-Klaholz/The-Gung",
                 "label": "VIEW_CODE"
             }
         ],
         "featured": true
     },
     {
-        "id": 4,
-        "title": "Hebel's Kitchen",
-        "description": "Led student-run business generating €1,000+ in profit, donated to local charities.",
-        "technologies": ["Leadership", "Entrepreneurship", "Management"],
-        "image": "assets/images/projects/HebelsKitchen.jpeg",
-        "category": "leadership",
-        "status": "COMPLETED",
-        "links": [
-            {
-                "type": "instagram",
-                "url": "https://www.instagram.com/hebelskitchen/?igsh=YXU0enVmaWdwaXFx",
-                "label": "INSTAGRAM"
-            }
-        ],
-        "featured": false
-    },
-    {
-        "id": 5,
-        "title": "Space Invaders + SQL",
-        "description": "Space Invaders inspired game with SQL-powered leaderboard system.",
-        "technologies": ["Java", "SQL", "Game Design"],
-        "image": "assets/images/projects/SpaceInvaders.png",
-        "category": "game",
-        "status": "COMPLETED",
-        "links": [
-            {
-                "type": "github",
-                "url": "https://github.com/Noah-Klaholz/SpaceInvadersCode",
-                "label": "VIEW_CODE"
-            }
-        ],
-        "featured": false
-    },
-    {
         "id": 6,
+        "slug": "rainy-day-fund",
         "title": "RainyDayFund",
         "description": "EVM-based smart contract with React app for blockchain challenge @University of Basel.",
+        "context": "University of Basel",
         "technologies": ["Solidity", "React", "Hardhat", "TypeScript"],
         "image": "assets/images/projects/RainyDayFund.png",
         "category": "blockchain",
@@ -113,8 +151,10 @@
     },
     {
         "id": 7,
+        "slug": "inheritance-protocol",
         "title": "Inheritance Protocol",
         "description": "Decentralized inheritance protocol with web-app @University of Basel.",
+        "context": "University of Basel",
         "technologies": ["Solidity", "Next.js", "Hardhat", "TypeScript"],
         "image": "assets/images/projects/DecentralizedInheritanceProtocol.png",
         "category": "blockchain",
@@ -129,7 +169,26 @@
         "featured": true
     },
     {
+        "id": 9,
+        "slug": "mini-game-engine",
+        "title": "Mini Game Engine",
+        "description": "Custom game engine for nonlinear click-and-point story games with achievement system.",
+        "technologies": ["Java", "GitHub", "Maven", "JetBrains"],
+        "image": "assets/images/projects/TheGreatDateDilemma.jpg",
+        "category": "game",
+        "status": "COMPLETED",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/Noah-Klaholz/The-Great-Date-Dilemma",
+                "label": "VIEW_CODE"
+            }
+        ],
+        "featured": true
+    },
+    {
         "id": 8,
+        "slug": "gamified-portfolio",
         "title": "Gamified Portfolio",
         "description": "A Cyberpunk style portfolio website developed using AI tools to test how advanced web development is with AI",
         "technologies": ["ClaudeAI", "HTML", "JavaScript", "CSS"],
@@ -151,20 +210,39 @@
         "featured": true
     },
     {
-        "id": 9,
-        "title": "Mini Game Engine",
-        "description": "Custom game engine for nonlinear click-and-point story games with achievement system.",
-        "technologies": ["Java", "GitHub", "Maven", "JetBrains"],
-        "image": "assets/images/projects/TheGreatDateDilemma.jpg",
+        "id": 4,
+        "slug": "hebels-kitchen",
+        "title": "Hebel's Kitchen",
+        "description": "Led student-run business generating €1,000+ in profit, donated to local charities.",
+        "technologies": ["Leadership", "Entrepreneurship", "Management"],
+        "image": "assets/images/projects/HebelsKitchen.jpeg",
+        "category": "leadership",
+        "status": "COMPLETED",
+        "links": [
+            {
+                "type": "instagram",
+                "url": "https://www.instagram.com/hebelskitchen/?igsh=YXU0enVmaWdwaXFx",
+                "label": "INSTAGRAM"
+            }
+        ],
+        "featured": false
+    },
+    {
+        "id": 5,
+        "slug": "space-invaders-sql",
+        "title": "Space Invaders + SQL",
+        "description": "Space Invaders inspired game with SQL-powered leaderboard system.",
+        "technologies": ["Java", "SQL", "Game Design"],
+        "image": "assets/images/projects/SpaceInvaders.png",
         "category": "game",
         "status": "COMPLETED",
         "links": [
             {
                 "type": "github",
-                "url": "https://github.com/Noah-Klaholz/The-Great-Date-Dilemma",
+                "url": "https://github.com/Noah-Klaholz/SpaceInvadersCode",
                 "label": "VIEW_CODE"
             }
         ],
-        "featured": true
+        "featured": false
     }
 ]
